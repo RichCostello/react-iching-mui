@@ -1,0 +1,28 @@
+@import "./hexagram-image.scss";
+@import "./List.scss";
+@import "./details.scss";
+@import "./hexagram-card.scss";
+@import "./PermanentDrawer.scss";
+@import "./animation.scss";
+@import "./AppBarHexCard.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather',sans-serif;
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 0% !important;
+  margin-right: 5px; 
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+

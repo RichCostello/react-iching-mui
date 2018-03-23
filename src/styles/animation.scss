@@ -1,0 +1,126 @@
+$time: .5s;
+$easing: cubic-bezier(0.23, 1, 0.32, 1) ;
+
+/*
+ * Transitions from pages (left/right translate)
+ */
+.page-transition-enter {
+  position: absolute;
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateX(100%);
+}
+.page-transition-enter.page-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all $time $easing;
+}
+
+.page-transition-exit {
+  position: absolute;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+
+.page-transition-exit.page-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all $time $easing;
+}
+
+.page-transition-appear {
+  position: absolute;
+  opacity: 0;
+}
+
+.page-transition-appear.page-transition-appear-active {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all $time $easing;
+}
+
+
+
+
+
+
+/*
+ * Transition for hexagram-preview
+ * (translateY , from bottom hidden to bottom of screen)
+ */
+.hexagram-preview-enter {
+  /*
+  transition: all $time $easing;
+  opacity: 0;
+  will-change: transform, opacity, width;
+  transform: translateY(100%);
+  */
+
+  animation-duration: $time;
+  animation-timing-function: $easing;
+  animation-fill-mode: both;
+}
+
+.hexagram-preview-enter.hexagram-preview-enter-active {
+  animation-name: bounceIn;
+  /*
+  opacity: 1;
+  transform: translateY(0px);
+  */
+}
+
+.hexagram-preview-exit {
+  animation-duration: $time;
+  animation-timing-function: $easing;
+  animation-fill-mode: both;
+
+  /*
+  transition: all $time $easing;
+  opacity: 1;
+  will-change: transform, opacity;
+  transform: translateY(0px);
+  */
+}
+
+.hexagram-preview-exit.hexagram-preview-exit-active {
+  animation-name: bounceOut;
+  /*
+  opacity: 0;
+  transform: translateY(-100%);
+  */
+}
+
+.hexagram-preview-appear {
+  animation-duration: $time;
+  animation-timing-function: $easing;
+  animation-fill-mode: both;
+}
+.hexagram-preview-appear.hexagram-preview-appear-active {
+  animation-name: bounceIn;
+}
+
+
+/*
+ * Question animation
+ */
+.question-enter {
+  transition: all $time $easing;
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateY(-100%);
+}
+.question-enter.queston-enter-active  {
+  width: 100%;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.question-exit {
+  transition: all $time $easing;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+.question-exit.question-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+}

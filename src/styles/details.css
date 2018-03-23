@@ -1,0 +1,28 @@
+.detailspage-container .interpretation {
+  margin: 5% 5%;
+  text-align: justify; }
+  .detailspage-container .interpretation pre {
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif !important;
+    font-style: italic;
+    text-align: justify; }
+  .detailspage-container .interpretation .highlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .detailspage-container .interpretation .highlight .tarot {
+      flex: 1 1 50%; }
+      .detailspage-container .interpretation .highlight .tarot img {
+        width: 100%;
+        height: auto; }
+    .detailspage-container .interpretation .highlight .oracle {
+      flex: 1 1 50%;
+      font-style: italic;
+      font-weight: 600;
+      text-transform: capitalize;
+      text-align: left; }
+  .detailspage-container .interpretation p {
+    font-weight: lighter;
+    letter-spacing: -0.5px; }
+  .detailspage-container .interpretation h3 {
+    text-transform: uppercase; }

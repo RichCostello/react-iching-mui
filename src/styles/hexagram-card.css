@@ -1,0 +1,51 @@
+/*
+ * HexagramImage
+ */
+.hexagram-card {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #ddd;
+  padding: 2.5% 2.5%; }
+  .hexagram-card .hex-img {
+    flex: 0 0 20%;
+    min-height: 100px;
+    height: 100px; }
+  .hexagram-card > .title {
+    flex: 0 0 60%;
+    margin-left: 2.5%; }
+    .hexagram-card > .title h3, .hexagram-card > .title h2 {
+      margin: 0px; }
+  .hexagram-card .trigrams {
+    border-radius: 2px;
+    background-color: #1DF688;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    padding: 1%;
+    flex: 0 0 15%;
+    align-self: 90px;
+    font-size: 2.0em; }
+    .hexagram-card .trigrams hr {
+      margin-top: 5px !important;
+      margin-bottom: 5px !important; }
+    .hexagram-card .trigrams .tri-img {
+      flex: 0 0 50%;
+      justify-content: space-around;
+      box-shadow: none;
+      text-shadow: none; }
+    .hexagram-card .trigrams .above, .hexagram-card .trigrams .below {
+      min-height: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between; }
+
+.popover-trigram {
+  font-family: monospace !important; }
+  .popover-trigram h4.title {
+    text-transform: uppercase !important;
+    margin: 0px !important;
+    font-weight: 700 !important; }
+  .popover-trigram b {
+    font-weight: 700 !important; }
+  .popover-trigram .image span:nth-of-type(1), .popover-trigram .animal span:nth-of-type(1) {
+    font-size: 2.0em !important; }

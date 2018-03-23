@@ -1,0 +1,10 @@
+/*
+ * List
+ */
+.listpage-container .avatar {
+  background-color: transparent !important; }
+
+.listpage-container .ListSub {
+  display: block;
+  text-align: center;
+  margin: 2px 0; }

@@ -1,0 +1,47 @@
+.detailspage-container {
+
+    .interpretation {
+      margin: 5% 5%;
+      text-align: justify;
+  
+      pre {
+        font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif !important;
+        font-style: italic;
+        text-align: justify;
+      }
+  
+      .highlight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+  
+        .tarot {
+          flex: 1 1 50%;
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+  
+        .oracle {
+          flex: 1 1 50%;
+          font-style: italic;
+          font-weight: 600;
+          text-transform: capitalize;
+          text-align: left;
+        }
+      }
+  
+      p {
+        font-weight: lighter;
+        letter-spacing: -0.5px;
+      }
+  
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+  
