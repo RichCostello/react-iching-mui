@@ -4,6 +4,10 @@ import * as IchingTable from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage';
 import { withRouter } from 'react-router-dom';
 
+var lStyle = {
+  backgroundColor: 'red'
+}
+
 class DefaultList extends React.Component{
     constructor(props) {
         super(props);
@@ -19,12 +23,12 @@ class DefaultList extends React.Component{
     render() {
         let hexNodes = this.state.hexagrams;
         return (
-            <div>
+            <div style={lStyle}>
                 <List>
                 <h4 className="ListSub">The King Wen sequence</h4>
                     {
-                     hexNodes.slice(0).reverse().map( (hex) => {
-                    //hexNodes.map( (hex) => {
+                    // hexNodes.slice(0).reverse().map( (hex) => {
+                    hexNodes.map( (hex) => {
                         return ( 
                     
                         <ListItem 

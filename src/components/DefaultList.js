@@ -4,10 +4,12 @@ import * as IchingTable from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage';
 import { withRouter } from 'react-router-dom';
 
+
 class DefaultList extends React.Component{
     constructor(props) {
         super(props);
         this.state = {hexagrams: IchingTable.getAllHexagrams()};
+
       }
     
       details(hex) {
