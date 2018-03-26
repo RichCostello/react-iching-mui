@@ -5,7 +5,18 @@ import { HexagramImage } from './HexagramImage';
 import { withRouter } from 'react-router-dom';
 
 var lStyle = {
-  backgroundColor: 'red'
+  backgroundColor: '#fffae6'
+}
+
+function shuffleArray(array) {
+    let i = array.length - 1;
+    for (; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
 }
 
 class DefaultList extends React.Component{
@@ -21,13 +32,12 @@ class DefaultList extends React.Component{
       }
 
     render() {
-        let hexNodes = this.state.hexagrams;
+        let hexNodes = shuffleArray(this.state.hexagrams);
         return (
             <div style={lStyle}>
                 <List>
                 <h4 className="ListSub">The King Wen sequence</h4>
                     {
-                    // hexNodes.slice(0).reverse().map( (hex) => {
                     hexNodes.map( (hex) => {
                         return ( 
                     

@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import DefaultList from './DefaultList';
 import ReverseList from './ReverseList';
 import RandomList from './RandomList';
+import Demo from './demo';
 
 class ListPage extends React.Component{
   constructor(props) {
@@ -12,15 +13,10 @@ class ListPage extends React.Component{
       hexagrams: IchingTable.getAllHexagrams(),
       showRev: false
     };
-    //this.handleClose = this.handleClose.bind(this);
-    //this.handleReverse = this.handleReverse.bind(this);
-    //this.handleRandom = this.handleRandom.bind(this);
   }
 
   details(hex) {
     this.props.history.push( `/details/${hex.number}/${hex.name}` );
-    console.log("this is the bar hex");
-    
   }
 
   toggleMeAgain = () => {
@@ -29,8 +25,6 @@ class ListPage extends React.Component{
       showRev: !doesToggleAgain
     });
   };
-
-
 
   render() {
     console.log('re-render listPage');
@@ -43,8 +37,7 @@ class ListPage extends React.Component{
 
     return (
       <div className="listpage-container">
-      <button onClick={this.toggleMeAgain}>Reverse List</button>
-      {defaultList}
+      <Demo/>
       </div>
     );
   }
