@@ -22,17 +22,19 @@ function shuffleArray(array) {
 class DefaultList extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {hexagrams: IchingTable.getAllHexagrams()};
+        this.state = {hexagrams: shuffleArray(IchingTable.getAllHexagrams())};
       }
     
       details(hex) {
         this.props.history.push( `/details/${hex.number}/${hex.name}` );
         console.log("this is the bar hex");
-        
       }
 
     render() {
-        let hexNodes = shuffleArray(this.state.hexagrams);
+        let hexNodes = this.state.hexagrams;
+        function noShuf(){
+            alert('Yo bitch');
+        }
         return (
             <div style={lStyle}>
                 <List>
