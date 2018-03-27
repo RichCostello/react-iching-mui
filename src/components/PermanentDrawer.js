@@ -11,7 +11,7 @@ import { Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import DetailPage from './DetailPage';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import $ from 'jquery';
 
 const drawerWidth = 300;
 
@@ -79,6 +79,24 @@ class PermanentDrawer extends React.Component {
   handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   };
+
+  componentDidMount() {
+    $('.appbar-card').hide();
+    $('List').click(function(){
+     alert("test");
+    });
+    $('.PermanentDrawer-content-7').scroll(function(){
+       if($('.PermanentDrawer-content-7').scrollTop() >= 95) {
+         $('.appbar-card').show();
+       } else {
+         $('.appbar-card').hide();
+       }
+    });
+   }
+ 
+   componentWillUnmount(){
+     $('.appbar-card').hide();
+   }
 
  
 

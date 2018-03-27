@@ -5,6 +5,7 @@ import * as _ from 'lodash';
 
 
 const AppBarHex = ({match}) => {
+  
 
     let hexNumber = _.toNumber( match.params.number );
       let hex      = IchingTable.getHexagram( hexNumber );
