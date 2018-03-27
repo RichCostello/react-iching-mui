@@ -15,6 +15,9 @@
     -webkit-animation-name: slideUp;
     animation-duration: 1s;
     -webkit-animation-duration: 1s; 
+    @media (max-width: 600px){
+      width: 180px;
+    }
 
     @keyframes slideUp {
     0% {
@@ -44,10 +47,16 @@
     > .title {
       flex: 0 0 60%;
       margin-left: 2.5%;
+      @media (max-width: 600px){
+        flex: 0 0 80%;
+      }
   
       h3 , h2 {
         margin: 0px;
         font-size: 15px;
+        @media (max-width: 600px){
+          font-size: 0.8em
+        }
       }
     }
   

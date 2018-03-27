@@ -15,6 +15,9 @@
   -webkit-animation-name: slideUp;
   animation-duration: 1s;
   -webkit-animation-duration: 1s; }
+  @media (max-width: 600px) {
+    .appbar-card {
+      width: 180px; } }
 
 @keyframes slideUp {
   0% {
@@ -40,9 +43,15 @@
   .appbar-card > .title {
     flex: 0 0 60%;
     margin-left: 2.5%; }
+    @media (max-width: 600px) {
+      .appbar-card > .title {
+        flex: 0 0 80%; } }
     .appbar-card > .title h3, .appbar-card > .title h2 {
       margin: 0px;
       font-size: 15px; }
+      @media (max-width: 600px) {
+        .appbar-card > .title h3, .appbar-card > .title h2 {
+          font-size: 0.8em; } }
   .appbar-card .trigrams {
     border-radius: 2px;
     background-color: #1DF688;

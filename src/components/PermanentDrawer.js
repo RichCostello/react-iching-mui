@@ -104,7 +104,7 @@ class PermanentDrawer extends React.Component {
                 <MenuIcon />
               </IconButton>
               <Typography variant="title" color="inherit" noWrap>
-              <Link to="/">React Iching Meme</Link>
+              <Link to="/">React Iching</Link>
               </Typography>
             <Route  exact  path={`/details/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
             </Toolbar>
