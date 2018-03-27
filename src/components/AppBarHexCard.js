@@ -15,7 +15,7 @@ import $ from 'jquery';
     }
 
     componentDidMount() {
-     // $('.appbar-card').hide();
+      $('.appbar-card').hide();
       $('List').click(function(){
        alert("test");
       });
