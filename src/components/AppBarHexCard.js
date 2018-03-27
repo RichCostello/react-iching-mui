@@ -19,8 +19,8 @@ import $ from 'jquery';
       $('List').click(function(){
        alert("test");
       });
-      $('.PermanentDrawer-content-7').scroll(function(){
-         if($('.PermanentDrawer-content-7').scrollTop() >= 95) {
+      $('.PermanentDrawer-content-7, .jss7').scroll(function(){
+         if($('.PermanentDrawer-content-7, .jss7').scrollTop() >= 95) {
            $('.appbar-card').show();
          } else {
            $('.appbar-card').hide();
