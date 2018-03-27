@@ -1,7 +1,6 @@
 import React from 'react';
 import { findDOMNode } from 'react-dom';
 import { connect } from 'react-redux';
-import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import { Drawer, AppBar, Toolbar, Typography, IconButton, Hidden } from 'material-ui';
@@ -83,20 +82,7 @@ class PermanentDrawer extends React.Component {
 
  
 
-  componentDidMount() {
-   $('.appbar-card').hide();
-   $('.PermanentDrawer-content-7').scroll(function(){
-      if($('.PermanentDrawer-content-7').scrollTop() >= 95) {
-        $('.appbar-card').show();
-      } else {
-        $('.appbar-card').hide();
-      }
-   });
-  }
 
-  componentWillUnmount(){
-    $('.appbar-card').hide();
-  }
 
 
   render() {

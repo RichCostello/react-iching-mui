@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getTrigramByName } from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage.js';
+import $ from 'jquery';
 
   
   export default class AppBarHexCard extends Component {
@@ -12,6 +13,24 @@ import { HexagramImage } from './HexagramImage.js';
  
       }
     }
+
+    componentDidMount() {
+      $('.appbar-card').hide();
+      $('List').click(function(){
+       alert("test");
+      });
+      $('.PermanentDrawer-content-7').scroll(function(){
+         if($('.PermanentDrawer-content-7').scrollTop() >= 95) {
+           $('.appbar-card').show();
+         } else {
+           $('.appbar-card').hide();
+         }
+      });
+     }
+   
+     componentWillUnmount(){
+       $('.appbar-card').hide();
+     }
     
     render() {
       let {trigrams, name, number, description} = this.props.hexagram;

@@ -14,6 +14,9 @@ const styles = theme => ({
   },
   input: {
     display: 'none',
+  },
+  buttonContainer: {
+    textAlign: 'center'
   }
 });
 
@@ -58,12 +61,14 @@ class RaisedButtons extends React.Component {
     }
         return (
             <div>
+            <div className={classes.buttonContainer}>
             <Button variant="raised" className={classes.button} onClick={this.toggleMeAgain}>
                 Reverse
             </Button>
             <Button variant="raised" className={classes.button} onClick={this.toggleMeRandom}>
                 Random
             </Button>
+            </div>
             {defaultList}
             </div>
         );    
