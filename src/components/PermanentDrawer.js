@@ -144,10 +144,12 @@ class PermanentDrawer extends React.Component {
            <div>
            <TransitionGroup>
              <CSSTransition component="div" key={this.props.location.key} classNames="page-transition" appear enter exit timeout={250} mountOnEnter={true} unmountOnExit={true}>
+            <div>
              <Switch location={this.props.location}>
              <Route  exact  path={`/`}component={HomePage}/>
              <Route  exact  path={`/details/:number/:name`} component={DetailPage}/>
              </Switch>
+             </div>
              </CSSTransition>
            </TransitionGroup>
            </div>    
