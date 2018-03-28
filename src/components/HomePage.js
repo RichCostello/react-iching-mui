@@ -5,7 +5,7 @@ class HomePage extends React.Component {
      render() {
          return (
              <div>
-             This is home bitches
+             This is home Dude!
              </div>
          );
      }
