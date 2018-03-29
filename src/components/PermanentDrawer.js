@@ -73,7 +73,12 @@ class PermanentDrawer extends React.Component {
 
     this.state = {
       mobileOpen: false,
+      loading: true
     };   
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false}), 1500);
   }
 
   handleDrawerToggle = () => {
@@ -82,6 +87,7 @@ class PermanentDrawer extends React.Component {
 
 
   render() {
+    const { loading } = this.state;
     const { classes } = this.props;
 
     const drawer = (
@@ -90,6 +96,10 @@ class PermanentDrawer extends React.Component {
       </div>
     );
 
+    if(loading) {
+      return null;
+    }
+    
     return (
       <div className={classes.root}>
         <div className={classes.appFrame}>
