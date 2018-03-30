@@ -99,7 +99,7 @@ class PermanentDrawer extends React.Component {
     if(loading) {
       return null;
     }
-    
+
     return (
       <div className={classes.root}>
         <div className={classes.appFrame}>

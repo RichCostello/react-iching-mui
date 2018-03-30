@@ -4,7 +4,8 @@ import { withRouter } from 'react-router-dom';
 import DefaultList from './DefaultList';
 import ReverseList from './ReverseList';
 import RandomList from './RandomList';
-import Demo from './demo';
+//import Demo from './demo';
+import Switches from './toggleSwitch';
 
 class ListPage extends React.Component{
   constructor(props) {
@@ -37,7 +38,7 @@ class ListPage extends React.Component{
 
     return (
       <div className="listpage-container">
-      <Demo/>
+      <Switches/>
       </div>
     );
   }

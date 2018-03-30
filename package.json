@@ -52,6 +52,7 @@
     "redux-devtools": "^3.4.1",
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-thunk": "^2.2.0",
+    "semantic-ui-react": "^0.79.0",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
     "thunk": "^0.0.1",
