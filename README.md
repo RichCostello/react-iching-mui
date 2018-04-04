@@ -1,6 +1,6 @@
 View example here https://richcostello.github.io/react-iching-mui
 
-To Install depencies"   yarn install
+To Install depencies:   yarn install
 
 To start app:    yarn start
 
