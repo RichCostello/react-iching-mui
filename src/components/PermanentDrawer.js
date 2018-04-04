@@ -1,5 +1,4 @@
 import React from 'react';
-import { findDOMNode } from 'react-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
@@ -7,7 +6,7 @@ import { Drawer, AppBar, Toolbar, Typography, IconButton, Hidden } from 'materia
 import MenuIcon from 'material-ui-icons/Menu';
 import ListPage from './ListPage';
 import HomePage from './HomePage';
-import { Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
 import DetailPage from './DetailPage';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";

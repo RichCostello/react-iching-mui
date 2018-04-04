@@ -50,8 +50,7 @@ import $ from 'jquery';
     }
   
     innerTrigrams( enabled ) {
-      let above = getTrigramByName( this.props.hexagram.trigrams.above.title );
-      let below = getTrigramByName( this.props.hexagram.trigrams.below.title );
+      
     }
   
   

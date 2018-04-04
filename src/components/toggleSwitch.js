@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import { withStyles } from 'material-ui/styles';
-import * as IchingTable from '../constants/lookup.js';
+
 import DefaultList from './DefaultList';
 import ReverseList from './ReverseList';
 import RandomList from './RandomList';
@@ -31,7 +31,6 @@ class Switches extends React.Component {
 
   handleChange = name => event => {
       const switchReverse = this.state.checkedB;
-      const switchRandom = this.state.checkedD;
       this.setState({
        checkedB: !switchReverse
       });
@@ -45,7 +44,6 @@ class Switches extends React.Component {
 
   render() {
     const { classes } = this.props;
-    let hexNodes = this.state.hexagrams;
     let defaultList = <DefaultList />;
     if (this.state.checkedB) {
       defaultList = <ReverseList />;

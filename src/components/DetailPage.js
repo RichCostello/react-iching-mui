@@ -3,13 +3,16 @@ import * as _ from 'lodash';
 import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
 import { Divider } from 'material-ui';
+import { Accordion, Icon } from 'semantic-ui-react'
 
 
-
-const DetailPage = ({match}) => {
- 
-    
-      let hexNumber = _.toNumber( match.params.number );
+//const DetailPage = ({match}) => {
+class DetailPage extends React.Component{
+  constructor(props) {
+    super(props);
+  }
+  render() {
+      let hexNumber = _.toNumber( this.props.match.params.number );
       let hex      = IchingTable.getHexagram( hexNumber );
       if ( ! hex ) {
         console.error(`Something is wrong on DetailPage. Hex shouldn't be = ${hex}`);
@@ -56,7 +59,8 @@ const DetailPage = ({match}) => {
             </div>
         </div>
       );
-  };
+    }
+  }
   
   
   export default DetailPage;

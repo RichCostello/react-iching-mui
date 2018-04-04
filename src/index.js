@@ -14,7 +14,6 @@ import DetailPage from './components/DetailPage';
 import registerServiceWorker from './registerServiceWorker';
 import orange from 'material-ui/colors/orange';
 import green from 'material-ui/colors/green';
-import $ from 'jquery';
 
 const theme = createMuiTheme({
     palette: {

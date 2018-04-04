@@ -32,9 +32,6 @@ class DefaultList extends React.Component{
 
     render() {
         let hexNodes = this.state.hexagrams;
-        function noShuf(){
-            alert('Yo bitch');
-        }
         return (
             <div style={lStyle}>
                 <List>
