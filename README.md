@@ -4,6 +4,8 @@ To Install depencies   yarn install
 
 To Start app    yarn start
 
+View on http://localhost:3000/
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
