@@ -6,12 +6,20 @@ import { Divider } from 'material-ui';
 import { Accordion, Icon } from 'semantic-ui-react'
 
 
-//const DetailPage = ({match}) => {
+
 class DetailPage extends React.Component{
-  constructor(props) {
-    super(props);
+  state = { activeIndex: 0 }
+
+  handleClick = (e, titleProps) => {
+    const { index } = titleProps
+    const { activeIndex } = this.state
+    const newIndex = activeIndex === index ? -1 : index
+
+    this.setState({ activeIndex: newIndex })
   }
+ 
   render() {
+    const { activeIndex } = this.state;
       let hexNumber = _.toNumber( this.props.match.params.number );
       let hex      = IchingTable.getHexagram( hexNumber );
       if ( ! hex ) {
@@ -43,19 +51,34 @@ class DetailPage extends React.Component{
               </div>
               <p>{hex.interpretation.resume}</p>
   
-              <h3>The Image</h3>
+              <Accordion fluid styled>
+              <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
+              <Icon name='dropdown' />
+              The Image
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 0}>
               <Divider />
               <pre>{hex.interpretation.image.oracle}</pre>
               <p>{hex.interpretation.image.image}</p>
-  
-              <h3>The Judgement</h3>
+              </Accordion.Content>
+              <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
+              <Icon name='dropdown' />
+              The Judgement
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 1}>
               <Divider />
               <pre>{hex.oracle}</pre>
               <p>{hex.interpretation.judgment}</p>
-  
-              <h3>The Lines</h3>
+              </Accordion.Content>
+              <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
+              <Icon name='dropdown' />
+              The Lines
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 2}>
               <Divider />
               {lines}
+              </Accordion.Content>
+              </Accordion>
             </div>
         </div>
       );
