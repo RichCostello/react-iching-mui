@@ -59,7 +59,7 @@ class DetailPage extends React.Component{
               </Accordion.Title>
               <Accordion.Content active={activeIndex === 0}>
               <Divider />
-              <pre>{hex.interpretation.image.oracle}</pre>
+              <blockquote><b>{hex.interpretation.image.oracle}</b></blockquote>
               <article>{hex.interpretation.image.image} </article>
               </Accordion.Content>
               <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
