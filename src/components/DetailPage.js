@@ -3,12 +3,16 @@ import * as _ from 'lodash';
 import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
 import { Divider } from 'material-ui';
-import { Accordion, Icon } from 'semantic-ui-react'
+import { Accordion, Icon, Label, Segment, Modal } from 'semantic-ui-react'
 
 
 
 class DetailPage extends React.Component{
   state = { activeIndex: 0 }
+  state = { open: false }
+
+  show = size => () => this.setState({ size, open: true })
+  close = () => this.setState({ open: false })
 
   handleClick = (e, titleProps) => {
     const { index } = titleProps
@@ -20,6 +24,7 @@ class DetailPage extends React.Component{
  
   render() {
     const { activeIndex } = this.state;
+    const { open, size } = this.state
       let hexNumber = _.toNumber( this.props.match.params.number );
       let hex      = IchingTable.getHexagram( hexNumber );
       if ( ! hex ) {
@@ -41,17 +46,29 @@ class DetailPage extends React.Component{
       return (
        
         <div className="detailspage-container">
-         <HexagramInfoCard hexagram={hex} trigrams />
-  
+        <Segment raised>
+          <Label as='a' color='orange' ribbon='right' onClick={this.show('large')}>Search Portal</Label>  
+          <Modal size={size} open={open} onClose={this.close}>
+          <Modal.Header>
+            Delete Your Account
+          </Modal.Header>
+          <Modal.Content>
+            <p>Are you sure you want to delete your account</p>
+          </Modal.Content>
+        </Modal> 
+          <HexagramInfoCard hexagram={hex} trigrams />
+         </Segment> 
             <div className="interpretation">
-            
+            <Segment raised>
               <div className="highlight">
                 <div className="oracle">
                   <blockquote>{hex.interpretation.oracle}</blockquote>
                 </div>
               </div>
+           
               <article> <p>{hex.interpretation.resume}</p>  </article>
-            
+              </Segment>
+                      
               <Accordion fluid styled>
               <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
               <Icon name='dropdown' />

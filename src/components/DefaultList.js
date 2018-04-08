@@ -3,6 +3,7 @@ import { List, ListItem, Avatar} from 'material-ui';
 import * as IchingTable from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage';
 import { withRouter } from 'react-router-dom';
+import { Label, Divider } from 'semantic-ui-react'
 
 
 class DefaultList extends React.Component{
@@ -24,21 +25,25 @@ class DefaultList extends React.Component{
             <div>
                 <List>
                 <h4 className="ListSub">The King Wen sequence</h4>
+                <Divider />
                     {
                     // hexNodes.slice(0).reverse().map( (hex) => {
                     hexNodes.map( (hex) => {
                         return ( 
-                    
-                        <ListItem 
-                        button
-                        onClick={this.details.bind(this,hex)}
-                        key={hex.number} 
-                        onTouchTap={this.details.bind(this,hex)}> 
-                        <Avatar className="avatar">
-                        <HexagramImage below={hex.trigrams.below} above={hex.trigrams.above} />
-                        </Avatar>
-                        <div><b>{hex.number} - {hex.name}</b> - {hex.description}</div>
-                        </ListItem>
+                            <div>
+                            <ListItem 
+                            button
+                            onClick={this.details.bind(this,hex)}
+                            key={hex.number} 
+                            onTouchTap={this.details.bind(this,hex)}> 
+                             
+                            <Avatar className="avatar">
+                            <HexagramImage below={hex.trigrams.below} above={hex.trigrams.above} />
+                            </Avatar>
+                            <div><b>{hex.number} - {hex.name}</b> - {hex.description}</div>
+                            </ListItem>
+                              <Divider />
+                            </div>
                         )
                     } )
                     }
