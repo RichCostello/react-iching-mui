@@ -39,19 +39,19 @@ class DetailPage extends React.Component{
   
  
       return (
-        <article>
+       
         <div className="detailspage-container">
          <HexagramInfoCard hexagram={hex} trigrams />
   
             <div className="interpretation">
-  
+            
               <div className="highlight">
                 <div className="oracle">
                   <blockquote>{hex.interpretation.oracle}</blockquote>
                 </div>
               </div>
-              <p>{hex.interpretation.resume}</p>
-  
+              <article> <p>{hex.interpretation.resume}</p>  </article>
+            
               <Accordion fluid styled>
               <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
               <Icon name='dropdown' />
@@ -60,7 +60,7 @@ class DetailPage extends React.Component{
               <Accordion.Content active={activeIndex === 0}>
               <Divider />
               <pre>{hex.interpretation.image.oracle}</pre>
-              <p>{hex.interpretation.image.image}</p>
+              <article>{hex.interpretation.image.image} </article>
               </Accordion.Content>
               <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
               <Icon name='dropdown' />
@@ -69,7 +69,7 @@ class DetailPage extends React.Component{
               <Accordion.Content active={activeIndex === 1}>
               <Divider />
               <pre>{hex.oracle}</pre>
-              <p>{hex.interpretation.judgment}</p>
+              <article>{hex.interpretation.judgment}</article>
               </Accordion.Content>
               <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
               <Icon name='dropdown' />
@@ -77,12 +77,11 @@ class DetailPage extends React.Component{
               </Accordion.Title>
               <Accordion.Content active={activeIndex === 2}>
               <Divider />
-              {lines}
+              <article>{lines}</article>
               </Accordion.Content>
               </Accordion>
             </div>
         </div>
-        </article>
       );
     }
   }
