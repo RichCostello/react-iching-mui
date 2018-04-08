@@ -39,6 +39,7 @@ class DetailPage extends React.Component{
   
  
       return (
+        <article>
         <div className="detailspage-container">
          <HexagramInfoCard hexagram={hex} trigrams />
   
@@ -81,6 +82,7 @@ class DetailPage extends React.Component{
               </Accordion>
             </div>
         </div>
+        </article>
       );
     }
   }
