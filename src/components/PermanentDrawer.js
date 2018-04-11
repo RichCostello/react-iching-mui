@@ -11,7 +11,6 @@ import DetailPage from './DetailPage';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-
 const drawerWidth = 300;
 
 const styles = theme => ({
@@ -72,8 +71,8 @@ class PermanentDrawer extends React.Component {
 
     this.state = {
       mobileOpen: false,
-      loading: true
-    };   
+      loading: true,
+    };  
   }
 
   componentDidMount() {
@@ -100,6 +99,7 @@ class PermanentDrawer extends React.Component {
     }
 
     return (
+      
       <div className={classes.root}>
         <div className={classes.appFrame}>
           <AppBar className={classes.appBar}>
@@ -153,7 +153,7 @@ class PermanentDrawer extends React.Component {
              <Switch location={this.props.location}>
              <Route  exact  path={`/`}component={HomePage}/>
              <Route  exact  path={`/home`}component={HomePage}/>
-             <Route  exact  path={`/details/:number/:name`} component={DetailPage}/>
+             <Route  exact  path={`/details/:number/:name`} component={DetailPage} />
              <Redirect from="/react-iching-mui" exact to="/home" />
              </Switch>
              </div>

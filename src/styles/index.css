@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * HexagramImage
  */
@@ -124,6 +125,15 @@
 /*
  * PermanentDrawer
  */
+.PermanentDrawer-appBar-3 {
+  z-index: 5 !important; }
+
+.MuiHiddenCss-smDown-95 {
+  z-index: 5 !important; }
+
+.ui.page.modals.dimmer.transition.visible.active  {
+  z-index:  500 !important; }
+
 @media (max-width: 600px) {
   main.PermanentDrawer-content-7, main.jss7 {
     height: calc(100vh - 32px);

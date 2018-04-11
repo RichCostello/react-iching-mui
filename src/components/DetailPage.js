@@ -2,18 +2,15 @@ import React from 'react';
 import * as _ from 'lodash';
 import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
+import ModalContainer from './ModalContainer';
 import { Divider } from 'material-ui';
-import { Accordion, Icon, Label, Segment, Modal } from 'semantic-ui-react'
+import { Accordion, Icon, Segment } from 'semantic-ui-react'
 
 
 
 class DetailPage extends React.Component{
   state = { activeIndex: 0 }
-  state = { open: false }
-
-  show = size => () => this.setState({ size, open: true })
-  close = () => this.setState({ open: false })
-
+  //accordian code
   handleClick = (e, titleProps) => {
     const { index } = titleProps
     const { activeIndex } = this.state
@@ -24,7 +21,7 @@ class DetailPage extends React.Component{
  
   render() {
     const { activeIndex } = this.state;
-    const { open, size } = this.state
+
       let hexNumber = _.toNumber( this.props.match.params.number );
       let hex      = IchingTable.getHexagram( hexNumber );
       if ( ! hex ) {
@@ -41,21 +38,11 @@ class DetailPage extends React.Component{
               </div>
             );
       }).value()
-  
- 
+
       return (
-       
         <div className="detailspage-container">
         <Segment raised>
-          <Label as='a' color='orange' ribbon='right' onClick={this.show('large')}>Search Portal</Label>  
-          <Modal size={size} open={open} onClose={this.close}>
-          <Modal.Header>
-            Delete Your Account
-          </Modal.Header>
-          <Modal.Content>
-            <p>Are you sure you want to delete your account</p>
-          </Modal.Content>
-        </Modal> 
+          <ModalContainer/>
           <HexagramInfoCard hexagram={hex} trigrams />
          </Segment> 
             <div className="interpretation">
