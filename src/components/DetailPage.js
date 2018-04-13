@@ -42,7 +42,7 @@ class DetailPage extends React.Component{
       return (
         <div className="detailspage-container">
         <Segment raised>
-          <ModalContainer/>
+          <ModalContainer hexagram={hex} trigrams />
           <HexagramInfoCard hexagram={hex} trigrams />
          </Segment> 
             <div className="interpretation">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Modal, Label } from 'semantic-ui-react'
-import { Switch, Route, Link, Redirect } from "react-router-dom";
+import { Modal, Label, Icon } from 'semantic-ui-react'
+
 
 
 class ModalContainer extends Component {
@@ -11,13 +11,17 @@ class ModalContainer extends Component {
   close = () => this.setState({ open: false })
 
   render() {
+    console.log('rich modal');
+    console.log(this.props);
+    let {trigrams, name, number, description} = this.props.hexagram;
     const { open, size, dimmer } = this.state
     return (
       <div>
          
-         <Modal size={'fullscreen'} dimmer={'blurring'} trigger={<Label as='a' color='orange' ribbon='right'>Search Portal</Label>}>
+         <Modal size={'fullscreen'} dimmer={'blurring'} trigger={<Label as='a' color='orange' ribbon='right'>Search Portal</Label>} closeIcon>
           <Modal.Header>
             Search for 
+            <h3>{number}: {name}</h3>
           </Modal.Header>
           <Modal.Content>
             <p>Click on search terms for</p>
