@@ -7,9 +7,12 @@
   background-color: #ddd;
   padding: 2.5% 2.5%; }
   .hexagram-card .hex-img {
-    flex: 0 0 20%;
+    flex: 0 0 15%;
     min-height: 100px;
     height: 100px; }
+    @media (max-width: 600px) {
+      .hexagram-card .hex-img {
+        flex: 0 0 25%; } }
   .hexagram-card > .title {
     flex: 0 0 60%;
     margin-left: 2.5%; }
