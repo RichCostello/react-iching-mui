@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Modal, Label, Icon } from 'semantic-ui-react'
 import { getTrigramByName } from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage.js';
-
+import * as _ from 'lodash';
 
 class ModalContainer extends Component {
   state = { open: false }
@@ -13,8 +13,18 @@ class ModalContainer extends Component {
 
   render() {
   
-    let {trigrams, name, number, description} = this.props.hexagram;
-    const { open, size, dimmer } = this.state
+    let {trigrams, name, number, description, tags} = this.props.hexagram;
+    const { open, size, dimmer } = this.state;
+
+    let searchtags = _.chain(tags).map( (tag, i) => {
+      return (
+        <div className="labeltags">
+         <Label className="slabel" as='a' basic size={'large'} key={i}>{tag.label}</Label>
+         </div>
+      );
+    }).value()
+    
+
     return (
       <div>
          
@@ -33,6 +43,8 @@ class ModalContainer extends Component {
           <Modal.Content> 
             <div>
             <p>Click on search terms for </p><h4>{name} - {description} </h4>
+  
+             {searchtags}
             </div>
           </Modal.Content>
           <Modal.Actions>

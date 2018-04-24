@@ -324,6 +324,13 @@
       text-align: center;
       justify-content: space-between; }
 
+/*
+modal
+*/
+.labeltags {
+  display: inline-flex;
+  margin-right: 5px; }
+
 body {
   margin: 0;
   padding: 0;
