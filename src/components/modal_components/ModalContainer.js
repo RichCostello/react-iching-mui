@@ -1,10 +1,25 @@
 import React, { Component } from 'react'
 import { Modal, Label, Icon } from 'semantic-ui-react'
-import { getTrigramByName } from '../constants/lookup.js';
-import { HexagramImage } from './HexagramImage.js';
+import { getTrigramByName } from '../../constants/lookup.js';
+import { HexagramImage } from '../HexagramImage.js';
+import HeadContainer from './HeadContainer.js';
+import * as pictureActions from '../../actions/pictures'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import ImageContainer from './ImageContainer.js';
+
 import * as _ from 'lodash';
 
-class ModalContainer extends Component {
+
+
+class ModalContainer extends React.Component {
+
+
+
+  componentDidMount() {
+    this.props.getImages()
+  }
+
   state = { open: false }
 
   show = size => () => this.setState({ size, open: true })
@@ -26,6 +41,7 @@ class ModalContainer extends Component {
     
 
     return (
+   
       <div>
          
          <Modal size={'fullscreen'} dimmer={'blurring'} trigger={<Label as='a' color='orange' ribbon='right'>Search Portal</Label>} closeIcon>
@@ -46,12 +62,17 @@ class ModalContainer extends Component {
   
              {searchtags}
             </div>
+   
+          <div>
+            <HeadContainer />
+            <ImageContainer filtered={this.props.filtered} />
+          </div>
+     
           </Modal.Content>
-          <Modal.Actions>
-            
-          </Modal.Actions>
+         
         </Modal>
       </div>
+     
     );
   }
   handleTouchTap = (event) => {
@@ -59,4 +80,14 @@ class ModalContainer extends Component {
   };
 }
 
-export default ModalContainer
+function mapStateToProps(state) {
+  return {
+    filtered: state.filtered
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(pictureActions, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ModalContainer)

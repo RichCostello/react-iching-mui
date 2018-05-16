@@ -7,13 +7,14 @@ import thunk from 'redux-thunk';
 import invariant from 'redux-immutable-state-invariant';
 import createBrowserHistory from 'history/createBrowserHistory'
 import { Router, Route, Switch } from 'react-router-dom';
-import reducers from './reducers';
+import rootReducer from './reducers/rootReducer'
 import './styles/index.css';
 import PermanentDrawer from './components/PermanentDrawer';
 import DetailPage from './components/DetailPage';
 import registerServiceWorker from './registerServiceWorker';
 import orange from 'material-ui/colors/orange';
 import green from 'material-ui/colors/green';
+
 
 const theme = createMuiTheme({
     palette: {
@@ -31,7 +32,7 @@ function configureStore( initialState ) {
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )(createStore);
 
-  const store = fCreateStore( reducers, initialState )
+  const store = fCreateStore(rootReducer);
 
   return store;
 }

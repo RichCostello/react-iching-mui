@@ -2,7 +2,7 @@ import React from 'react';
 import * as _ from 'lodash';
 import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
-import ModalContainer from './ModalContainer';
+import ModalContainer from './modal_components/ModalContainer';
 import { Divider } from 'material-ui';
 import { Accordion, Icon, Segment } from 'semantic-ui-react'
 

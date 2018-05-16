@@ -6,3 +6,137 @@ modal
     display: inline-flex;
     margin-right: 5px;
 }
+
+  /* image body area */
+
+  .image-wrapper {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
+  
+  .image-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    margin-top: 1vw;
+    border-radius: 6%;
+    font-size: 2vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 3%;
+  }
+  
+  
+  .dialog-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .overlay {
+    border-radius: 6%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    color: #ffffff;
+    background: #000000;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-card:hover .overlay {
+    z-index: 1;
+    opacity: 0.7;
+    transition: all .3s ease-in-out;
+  }
+  
+  .comment-box {
+    padding: 3%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin-top: 2%;
+  }
+  
+  .comment {
+    padding: 2%;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    width: 89%;
+    align-self: center;
+  }
+  
+  .comment-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .no-comment {
+    text-align: center;
+  }
+/* header area */
+
+#head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #title-container {
+    font-family: Roboto, sans-serif;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    border: .8vw solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 21vw;
+    height: 21vw;
+  }
+  
+  #search-bar-container {
+    margin: auto;
+  }
+  
+  
+  .title {
+    font-size: 10vw;
+  }
+  
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-wrapper {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 2vh;
+  }
+  
