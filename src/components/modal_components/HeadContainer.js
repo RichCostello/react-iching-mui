@@ -5,6 +5,7 @@ import * as picturesActions from '../../actions/pictures'
 import SearchBar from './SearchBar'
 import SortButton from './SortButton'
 import FilterButton from './FilterButton'
+import PropTypes from 'prop-types';
 
 
 class HeadContainer extends React.Component {

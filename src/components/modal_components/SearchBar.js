@@ -2,9 +2,8 @@ import React from 'react'
 import TextField from 'material-ui/TextField'
 import IconButton from 'material-ui/IconButton'
 import Search from '@material-ui/icons/Search';
-import { withStyles } from 'material-ui/styles';
 import PropTypes from 'prop-types';
-import red from 'material-ui/colors/red';
+
 
 
 
@@ -22,7 +21,7 @@ class SearchBar extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        const { searchImages } = this.this.props
+        const { searchImages } = this.props
 
         if (/\S/.test(this.state.query)) {
             searchImages(this.state.query)
@@ -55,8 +54,6 @@ class SearchBar extends React.Component {
 }
 
 
-SearchBar.propTypes = {
-    theme: PropTypes.object.isRequired,
-};
+
 
 export default SearchBar

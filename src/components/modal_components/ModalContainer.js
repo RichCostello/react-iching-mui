@@ -7,7 +7,7 @@ import * as pictureActions from '../../actions/pictures'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import ImageContainer from './ImageContainer.js';
-
+import { Link } from 'react-router-dom';
 import * as _ from 'lodash';
 
 
