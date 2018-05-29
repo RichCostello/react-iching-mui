@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Modal, Label, Icon } from 'semantic-ui-react'
 import { getTrigramByName } from '../../constants/lookup.js';
 import { HexagramImage } from '../HexagramImage.js';
-import HeadContainer from './HeadContainer.js';
+//import HeadContainer from './HeadContainer.js';
 import * as pictureActions from '../../actions/pictures'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -14,8 +14,6 @@ import * as _ from 'lodash';
 
 class ModalContainer extends React.Component {
 
-
-
   componentDidMount() {
     this.props.getImages()
   }
@@ -25,16 +23,35 @@ class ModalContainer extends React.Component {
   show = size => () => this.setState({ size, open: true })
   show = dimmer => () => this.setState({ dimmer, open: true })
   close = () => this.setState({ open: false })
+  
+  
+  labelClick = (label, event) => {
+    const { searchImages } = this.props
+      this.setState({ query:event.target.innerHTML})
+      searchImages(this.state.query)
+  }
+
 
   render() {
-  
+    
     let {trigrams, name, number, description, tags} = this.props.hexagram;
-    const { open, size, dimmer } = this.state;
+    const { open, size, dimmer, labelClick } = this.state;
 
-    let searchtags = _.chain(tags).map( (tag, i) => {
+    
+
+    let searchtags = _.chain(tags).map( (tag, label, index) => {
       return (
-        <div className="labeltags">
-         <Label className="slabel" as='a' basic size={'large'} key={i}>{tag.label}</Label>
+        <div className="labeltags" key={tag.label.index}>
+         <Label 
+            className="slabel" 
+            as='a' 
+            basic size={'large'} 
+            key={tag.index}
+            value={this.state.query}
+            onClick={this.labelClick.bind(null, tag)}
+            >
+            {tag.label}
+          </Label>
          </div>
       );
     }).value()
@@ -64,7 +81,7 @@ class ModalContainer extends React.Component {
             </div>
    
           <div>
-            <HeadContainer />
+         
             <ImageContainer filtered={this.props.filtered} />
           </div>
      

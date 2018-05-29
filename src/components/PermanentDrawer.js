@@ -10,6 +10,7 @@ import { Switch, Route, Link, Redirect } from "react-router-dom";
 import DetailPage from './DetailPage';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import * as injectTapEventPlugin from 'react-tap-event-plugin';
 
 const drawerWidth = 300;
 
@@ -67,6 +68,7 @@ const styles = theme => ({
 class PermanentDrawer extends React.Component {
 
   constructor(props) {
+    injectTapEventPlugin();
     super(props);
 
     this.state = {

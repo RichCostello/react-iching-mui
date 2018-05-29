@@ -25,10 +25,10 @@ class DefaultList extends React.Component{
                 <h4 className="ListSub">The King Wen sequence</h4>
                 <Divider />
                     {
-                     hexNodes.slice(0).reverse().map( (hex) => {
+                     hexNodes.slice(0).reverse().map( (hex, index) => {
                     //hexNodes.map( (hex) => {
                         return ( 
-                        <div>
+                        <div key={index}>
                         <ListItem 
                         button
                         onClick={this.details.bind(this,hex)}

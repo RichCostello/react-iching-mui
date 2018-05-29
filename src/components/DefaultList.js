@@ -28,9 +28,9 @@ class DefaultList extends React.Component{
                 <Divider />
                     {
                     // hexNodes.slice(0).reverse().map( (hex) => {
-                    hexNodes.map( (hex) => {
+                    hexNodes.map( (hex, index) => {
                         return ( 
-                            <div>
+                            <div key={index}>
                             <ListItem 
                             button
                             onClick={this.details.bind(this,hex)}

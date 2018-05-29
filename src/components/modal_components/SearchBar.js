@@ -3,9 +3,7 @@ import TextField from 'material-ui/TextField'
 import IconButton from 'material-ui/IconButton'
 import Search from '@material-ui/icons/Search';
 import PropTypes from 'prop-types';
-
-
-
+  
 
 class SearchBar extends React.Component {
     state = { 
@@ -37,7 +35,6 @@ class SearchBar extends React.Component {
         <div>
             <form onSubmit={this.handleSubmit}>
                 <TextField
-                    
                     value={this.state.query}
                     errorText={this.state.error}
                     hintText="Search"
