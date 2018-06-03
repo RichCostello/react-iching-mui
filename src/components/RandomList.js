@@ -3,7 +3,7 @@ import { List, ListItem, Avatar} from 'material-ui';
 import * as IchingTable from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage';
 import { withRouter } from 'react-router-dom';
-import { Label, Divider } from 'semantic-ui-react'
+import { Divider } from 'semantic-ui-react'
 
 var lStyle = {
   backgroundColor: '#fffae6'

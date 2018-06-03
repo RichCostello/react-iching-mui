@@ -1,54 +1,56 @@
-import React, { Component } from 'react'
-import { Modal, Label, Icon } from 'semantic-ui-react'
-import { getTrigramByName } from '../../constants/lookup.js';
+import React from 'react'
+import { Modal, Label } from 'semantic-ui-react'
+//import { getTrigramByName } from '../../constants/lookup.js';
 import { HexagramImage } from '../HexagramImage.js';
 //import HeadContainer from './HeadContainer.js';
 import * as pictureActions from '../../actions/pictures'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import ImageContainer from './ImageContainer.js';
-import { Link } from 'react-router-dom';
 import * as _ from 'lodash';
 
 
 
 class ModalContainer extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.labelClick = this.labelClick.bind(this);
+  }
   componentDidMount() {
     this.props.getImages()
   }
 
-  state = { open: false }
+  state = { 
+    open: false,
+  }
 
   show = size => () => this.setState({ size, open: true })
   show = dimmer => () => this.setState({ dimmer, open: true })
   close = () => this.setState({ open: false })
-  
+
+
   
   labelClick = (label, event) => {
+    event.preventDefault();
+    let query = event.target.innerText;
     const { searchImages } = this.props
-      this.setState({ query:event.target.innerHTML})
-      searchImages(this.state.query)
+    searchImages(query)
   }
 
 
   render() {
     
     let {trigrams, name, number, description, tags} = this.props.hexagram;
-    const { open, size, dimmer, labelClick } = this.state;
-
-    
 
     let searchtags = _.chain(tags).map( (tag, label, index) => {
       return (
-        <div className="labeltags" key={tag.label.index}>
+        <div className="labeltags"  key={label} onClickCapture={this.labelClick.bind(null, tag)}>
          <Label 
             className="slabel" 
             as='a' 
             basic size={'large'} 
-            key={tag.index}
-            value={this.state.query}
-            onClick={this.labelClick.bind(null, tag)}
+            value={tag.label}
+            key={label}  
             >
             {tag.label}
           </Label>
@@ -92,9 +94,9 @@ class ModalContainer extends React.Component {
      
     );
   }
-  handleTouchTap = (event) => {
-    let trigram = getTrigramByName( this.props.hexagram.trigrams[event.currentTarget.className].title );
-  };
+ //handleTouchTap = (event) => {
+   // let trigram = getTrigramByName( this.props.hexagram.trigrams[event.currentTarget.className].title );
+  //};
 }
 
 function mapStateToProps(state) {

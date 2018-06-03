@@ -3,7 +3,7 @@ import * as IchingTable from '../constants/lookup.js';
 import { withRouter } from 'react-router-dom';
 import DefaultList from './DefaultList';
 import ReverseList from './ReverseList';
-import RandomList from './RandomList';
+//import RandomList from './RandomList';
 //import Demo from './demo';
 import Switches from './toggleSwitch';
 
@@ -29,7 +29,7 @@ class ListPage extends React.Component{
 
   render() {
     console.log('re-render listPage');
-    let hexNodes = this.state.hexagrams;
+   // let hexNodes = this.state.hexagrams;
     
     let defaultList = <DefaultList />;
     if (this.state.showRev) {

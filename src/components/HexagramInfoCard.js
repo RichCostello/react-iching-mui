@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { getTrigramByName } from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage.js';
 
   export default class HexagramInfoCard extends Component {
@@ -20,8 +19,8 @@ import { HexagramImage } from './HexagramImage.js';
       );
     }
   
-    handleTouchTap = (event) => {
-      let trigram = getTrigramByName( this.props.hexagram.trigrams[event.currentTarget.className].title );
-    };
+    //handleTouchTap = (event) => {
+     // let trigram = getTrigramByName( this.props.hexagram.trigrams[event.currentTarget.className].title );
+    //};
   }
   
