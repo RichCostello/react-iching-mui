@@ -15,6 +15,7 @@ const ImageContainer = ({ filtered }) => {
   return (
     <div className="image-wrapper">
       {allImages}
+      {allImages.length ? allImages: <h2>No memes are set for this query tag</h2>}
     </div>
   )
 }
