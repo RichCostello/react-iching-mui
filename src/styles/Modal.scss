@@ -2,9 +2,28 @@
 modal
 */
 
+a.page {
+ color:red
+}
+
+.tagactive {
+  color: gold;
+}
+
 .labeltags{
     display: inline-flex;
     margin-right: 5px;
+    
+}
+
+a.ui.large.basic.label.slabel {
+  color: red;
+
+}
+
+a.ui.large.basic.label.slabel--active {
+  color: gold;
+
 }
 
   /* image body area */
@@ -139,4 +158,6 @@ modal
       justify-content: flex-start;
       margin-bottom: 2vh;
   }
+  
+
   

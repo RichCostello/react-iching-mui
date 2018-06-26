@@ -7,62 +7,94 @@ import * as pictureActions from '../../actions/pictures'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import ImageContainer from './ImageContainer.js';
-import * as _ from 'lodash';
-
+import ReactDOM from 'react-dom'
+import classnames from 'classnames';
+import {NavLink, withRouter} from 'react-router-dom';
+import queryString from 'query-string';
 
 
 class ModalContainer extends React.Component {
+
   constructor(props) {
     super(props);
-    this.labelClick = this.labelClick.bind(this);
-  }
+    
+    this.state = {
+      open: false,
+      selectedTabId: 1,
+
+    }
+    
+  }  
   componentDidMount() {
-    this.props.getImages()
+    let pics = this.props.hexagram.tags[0].label 
+    this.props.getImages(pics)
   }
 
-  state = { 
-    open: false,
-  }
+
+  //isActive = (id) => {
+  	//return this.state.selectedTabId === id;
+  //}
+  //setActiveTab = (selectedTabId) => {
+    //this.setState({ selectedTabId });
+  //}
+
+
 
   show = size => () => this.setState({ size, open: true })
   show = dimmer => () => this.setState({ dimmer, open: true })
-  close = () => this.setState({ open: false })
-
-
+  close = () => this.setState({ open: false });
   
-  labelClick = (label, event) => {
+  
+  labelClick = (label, event, selectedTabId, id, tag) => {
     event.preventDefault();
-    let query = event.target.innerText;
+    let query = event.target.innerText;    
     const { searchImages } = this.props
-    searchImages(query)
+    searchImages(query);
+    this.setState({ selectedTabId : label.id });
+
   }
 
-
+ 
   render() {
     
-    let {trigrams, name, number, description, tags} = this.props.hexagram;
 
-    let searchtags = _.chain(tags).map( (tag, label, index) => {
+    let {trigrams, name, number, description, tags, selectedTabId} = this.props.hexagram;
+    let searchtags = (tags).map( (tag, label, id, index) => {
+
+      let initActive = (match, location) => {
+        if (!match) {
+          return false
+        }
+        let selectedTabId = parseInt(match.selectedTabId)
+        return this.state.selectedTabId === tag.id;
+      }
+      
+      const params = new URLSearchParams(this.props)
+      console.log(this.state.selectedTabId)
       return (
-        <div className="labeltags"  key={label} onClickCapture={this.labelClick.bind(null, tag)}>
+        <div className="labeltags" key={label} >
          <Label 
-            className="slabel" 
-            as='a' 
+            onClickCapture={this.labelClick.bind(null, tag)} 
+            as={NavLink}
+            to="/"
+           
+            activeClassName="slabel--active"
             basic size={'large'} 
-            value={tag.label}
-            key={label}  
+            value={tag.id}
+            key={label} 
+            isActive={initActive}
             >
             {tag.label}
           </Label>
-         </div>
+         </div>   
       );
-    }).value()
+    })
     
 
     return (
-   
+      
       <div>
-         
+       
          <Modal size={'fullscreen'} dimmer={'blurring'} trigger={<Label as='a' color='orange' ribbon='right'>Search Portal</Label>} closeIcon>
           <Modal.Header>
           
@@ -94,9 +126,7 @@ class ModalContainer extends React.Component {
      
     );
   }
- //handleTouchTap = (event) => {
-   // let trigram = getTrigramByName( this.props.hexagram.trigrams[event.currentTarget.className].title );
-  //};
+
 }
 
 function mapStateToProps(state) {
@@ -109,4 +139,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(pictureActions, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ModalContainer)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ModalContainer))

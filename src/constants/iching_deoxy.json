@@ -49,11 +49,10 @@
             ]
         },
         "tags": [
-            {"label":"creative"},
-            {"label":"enduring power"},
-            {"label":"perserverance"},
-            {"label":"sublime"},
-            {"label":"red"}
+            {"id": 1, "label":"creative"},
+            {"id": 2, "label":"enduring power"},
+            {"id": 3, "label":"perserverance"},
+            {"id": 4, "label":"sublime"}
         ]
     },
     {

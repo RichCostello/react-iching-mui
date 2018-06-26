@@ -2,7 +2,7 @@
 import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
 
 
-export function getImages() {
+export function getImages(pics) {
     const data = {
       method: 'GET',
       headers: {
@@ -12,7 +12,7 @@ export function getImages() {
       }
     }
     return (dispatch) => {
-      fetch(`https://api.imgur.com/3/gallery/search/time/all/0?q=persevere&q_type=png&q_type=album`, data)
+      fetch(`https://api.imgur.com/3/gallery/search/time/all/0?q=${pics}&q_type=png&q_type=album`, data)
         .then(res => res.json())
         .then(images => {
           dispatch({type: 'MOUNT_IMAGES', payload: images.data})
