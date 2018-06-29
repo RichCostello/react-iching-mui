@@ -52,7 +52,9 @@
             {"id": 1, "label":"creative"},
             {"id": 2, "label":"enduring power"},
             {"id": 3, "label":"perserverance"},
-            {"id": 4, "label":"sublime"}
+            {"id": 4, "label":"sublime"},
+            {"id": 5, "label":"primal"},
+            {"id": 6, "label":"heaven"}
         ]
     },
     {
@@ -99,7 +101,11 @@
                     "expl": "Yellow is the color of the earth and of the middle; it is the symbol of that which is reliable and genuine. The lower garment is inconspicuously decorated—the symbol of aristocratic reserve. When anyone is called upon to work in a prominent but not independent position, true success depends on the utmost discretion. A man's genuineness and refinement should not reveal themselves directly; they should express themselves only indirectly as an effect from within."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":"receptive"},
+            {"id": 2, "label": "Perseverance"}
+        ]
     },
     {
         "number": 3,
@@ -141,7 +147,10 @@
                     "expl": "An individual is in a position in which he cannot so express his good intentions that they will actually take shape and be understood. Other people interpose and distort everything he does. He should then be cautious and proceed step by step. He must not try to force the consummation of a great undertaking, because success is possible only when general confidence already prevails. It is only through faithful and conscientious work, unobtrusively carried on, that the situation gradually clears up and the hindrance disappears."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 4,
@@ -187,7 +196,10 @@
                     "expl": "An inexperienced person who seeks instruction in a childlike and unassuming way is on the right path, for the man devoid of arrogance who subordinated himself to his teacher will certainly be helped."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 5,
@@ -233,7 +245,10 @@
                     "expl": "Even in the midst of danger there come intervals of peace when things go relatively well. If we possess enough inner strength, we shall take advantage of these intervals to fortify ourselves for renewed struggle. We must know how to enjoy the moment without being deflected from the goal, for perseverance is needed to remain victorious.  This is true in public life as well; it is not possible to achieve everything all at once. The height of wisdom is to allow people enough recreation to quicken pleasure in their work until the task is completed. Herein lies the secret of the whole hexagram. It differs from Chin OBSTRUCTION (39), in the fact that in this instance, while waiting, we are sure of our cause and therefore do not lose the serenity born of inner cheerfulness."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 6,
@@ -271,7 +286,10 @@
                     "expl": "This refers to a person whose inner attitude at first lacks peace. He does not feel content with his situation and would like to improve it through conflict. In contrast tot the situation of the nine in the second place, he is dealing with a weaker opponent and might therefore succeed. But he cannot carry on the fight, because, since right is not on his side, he cannot justify the conflict to his conscience. Therefore he turns back and accepts his fate. He changes his mind and finds lasting peace in being at one with eternal law. This brings good fortune."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 7,
@@ -313,7 +331,10 @@
                     "expl": "Game is in the field—it has left its usual haunts in the forest and is devastating the fields. This points to an enemy invasion. Energetic combat and punishment are here thoroughly justified, but they must not degenerate into a wild melee in which everyone fends for himself. Despite the greatest degree of perseverance and bravery, this would lead to misfortune. The army must be directed by an experienced leader. It is a matter of waging war, not of permitting the mob to slaughter all who fall into their hands; if they do, defeat will be the result, and despite all perseverance there is danger of misfortune."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 8,
@@ -355,7 +376,10 @@
                     "expl": "Here the relations with a man who is the center of union are well established. Then we may, and indeed we should, show our attachment openly. But we must remain constant and not allow ourselves to be led astray."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 9,
@@ -397,7 +421,10 @@
                     "expl": "\tIf one is in the difficult and responsible position of counselor to a powerful man, on should restrain him in such a way that the threat of actual bloodshed may arise. Nonetheless, the power of disinterested truth is greater than all theses obstacles. It carries such weight that the end is achieved, and all danger of bloodshed and all fear disappear."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 10,
@@ -443,7 +470,10 @@
                     "expl": "This refers to the ruler of the hexagram as a whole. One sees that one has to be resolute in conduct. But at the same time one must remain conscious of the danger connected with such resoluteness, especially if it is to be persevered in. Only awareness of the danger makes success possible."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 11,
@@ -489,7 +519,10 @@
                     "expl": "The sovereign I is T'ang the Completer. By his decree the imperial princesses, although higher in rank than their husbands, had to obey them like all other wives. Here too we are shown a truly modest union of high and low that brings happiness and blessings."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 12,
@@ -523,7 +556,10 @@
                     "expl": "Inferior people are ready to flatter their superiors in a servile way. They would also endure the superior man if he would put an end to their confusion. This is fortunate for them. But the great man calmly bears the consequences of the standstill. He does not mingle with the crowd of the inferior; that is not his place. By his willingness to suffer personally he insures the success of his fundamental principles.\t\t\tSix in the third place means:\tThey bear shame.Inferior people who have risen to power illegitimately do not feel equal to the responsibility they have taken upon themselves. In their hearts they begin to be ashamed, although at first they do not show it outwardly. This marks a turn for the better. \t\tNine in the fourth place means:\tHe who acts at the command of the highest \tRemains without blame.\tThose of like mind partake of the blessing.The time of standstill is nearing the point of change into its opposite. Whoever wishes to restore order must feel himself called to the task and have the necessary authority. A man who sets himself up as capable of creating order according to his own judgment could make mistakes and end in failure. But the man who is truly called to the task is favored by the conditions of the time, and all those of like mind will share in his blessing. \tNine in the fifth place means:\tStandstill is giving way.\tGood fortune for the great man.\t\"What if it should fail, what if it should fail?\"\tIn this way he ties it to a cluster of mulberry shoots.The time undergoes a change. The right man, able to restore order, has arrived. Hence \"good fortune.\" But such periods of transition are the very times in which we must fear and tremble. Success is assured only through greatest caution, which asks always, \"What if it should fail?\" When a mulberry bush is cut down, a number of unusually strong shoots sprout from the roots. Hence the image of tying something to a cluster of mulberry shoots is used to symbolize the way of making success certain. Confucius says about this line:Danger arises when a man feels secure in his position. Destruction threatens when a man seeks to preserve his worldly estate. Confusion develops when a man has put everything in order. Therefore the superior man does not forget danger in his security, not ruin when he is well established, nor confusion when his affairs are in order. In this way he gains personal safety and is able to protect the empire."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 13,
@@ -565,7 +601,10 @@
                     "expl": "Here the reconciliation that follows quarrel mover nearer. It is true that there are still dividing walls on which we stand confronting one another. But the difficulties are too great. We get into straits, and this brings us to our senses. We cannot fight, and therein lies our good fortune.\t\tNine in the fifth place means:\tMen bound in fellowship first weep and lament,\tBut afterward they laugh.\tAfter great struggles they succeed in meeting.Two people are outwardly separated, but in their hearts they are united. They are kept apart by their positions in life. Many difficulties and obstructions arise between them and cause them grief. But, remaining true to each other, the allow nothing to separate them, and although it costs them a severe struggle to overcome the obstacles, they will succeed. When they come together their sadness will change to joy. Confucius says of this:Life leads the thoughtful man on a path of many windings.Now the course is checked, now it runs straight again.Here winged thoughts may pour freely forth in words,There the heavy burden of knowledge must be shut away in silence.But when two people are at one in the inmost hearts,They shatter even the strength of iron or of bronze.And when two people understand each other in their inmost hearts,Their words are sweet and strong, like the fragrance of orchids."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 14,
@@ -611,7 +650,10 @@
                     "expl": "The situation is very favorable. People are being won not by coercion but by unaffected sincerity, so that they are attached to us in sincerity and truth. However, benevolence alone is not sufficient at the time of POSSESSION IN GREAT MEASURE. For insolence might begin to spread. Insolence must be kept in bounds by dignity; then good fortune is assured."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 15,
@@ -657,7 +699,10 @@
                     "expl": "Modesty is not to be confused with weak good nature that lets things take their own course. When a man holds a responsible position, he must at times resort to energetic measures. In doing so he must not try to make an impression by boasting of his superiority but must make certain of the people around him. The measures taken should be purely objective and in no way personally offensive. Thus modesty manifests itself even in severity."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 16,
@@ -703,7 +748,10 @@
                     "expl": "Here enthusiasm is obstructed. A man is under constant pressure, which prevents him from breathing freely. However, this pressure has its advantage—it prevents him from consuming his powers in empty enthusiasm. Thus constant pressure can actually serve to keep one alive."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 17,
@@ -749,7 +797,10 @@
                     "expl": "Every man must have something he follows—something that serves him as a lodestar. He who follows with conviction the beautiful and the good may feel himself strengthened by this saying."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 18,
@@ -779,7 +830,10 @@
                     "expl": "Rigid adherence to tradition has resulted in decay. But the decay has not yet penetrated deeply and so can still be easily remedied. It is as if a son were compensated for the decay his father allowed to creep in. Then no blame attaches to the father. However, one must not overlook the danger or take the matter too lightly. Only if one is conscious of the danger connected with every reform will everything go well in the end. \tNine in the second place means:\tSetting right what has been spoiled by the mother.\tOne must not be too persevering.\tThis refers to mistakes that as a result of weakness have brought about decay-hence the symbol, \"what has been spoiled by the mother. \" In setting things right in such a case, a certain gentle consideration is called for. In order not to wound, one should not attempt to proceed too drastically. \t\tNine in the third place means:\tSetting right what has been spoiled by the father.\tThere will be a little remorse. No great blame.This describes a man who proceeds a little too energetically in righting the mistakes of the past. Now and then, as a result, minor discourse and annoyances will surely develop. But too much energy is better than too little. Therefore, although he may at times have slight cause for regret, he remains free of any serious blame. \tSix in the fourth place means:\tTolerating what has been spoiled by the father.\tIn continuing one sees humiliation.\tThis shows the situation of someone too weak to take measures against decay that has its roots in the past and is just beginning to manifest itself. It is allowed to run its course. If this continues, humiliation will result. \tSix in the fifth place means:\tSetting right what has been spoiled by the father.\tOne meets with praise.An individual is confronted with corruption originating from neglect in former times. He lacks the power to ward it off alone, but with able helpers he can at least bring about a thorough reform, if he cannot create a new beginning, and this also is praiseworthy."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 19,
@@ -821,7 +875,10 @@
                     "expl": "\tWhile the three lower lines indicate rise to power and influence, the three upper lines show the attitude of persons in higher position toward those of lower rank for whom they procure influence. Here is shown the open-minded approach of a person of high rank to a man of ability whom he draws in to his own circle, regardless of class prejudice. This is very favorable. \t \tSix in the fifth place means:\tWise approach.\tThis is right for a great prince.\tGood fortune.A prince, or anyone in a leading position, must have the wisdom to attract to himself people of ability who are expert in directing affairs. His wisdom consists both in selecting the right people and in allowing those chosen to have a free hand without interference from him.  For only through such self-restraint will he find the experts needed to satisfy all of his requirements."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 20,
@@ -863,7 +920,10 @@
                     "expl": "This describes a man who understands the secrets by which a kingdom can be made to flourish. Such a man must be given an authoritative position, in which he can exert influence. He should be, so to speak, a guest-that is, he should be honored and act independently, and should not be used as a tool."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 21,
@@ -901,7 +961,10 @@
                     "expl": "The case to be decided is indeed not easy but perfectly clear.  Since we naturally incline to leniency, we must make every effort to be like yellow gold-that is, as true as gold and as impartial as yellow, the color of the middle [the mean]. It is only by remaining conscious of the dangers growing out of the responsibility we have assumed that we can avoid making mistakes."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 22,
@@ -947,7 +1010,10 @@
                     "expl": "A man withdraws from contact with people of the lowlands, who seek nothing but magnificence and luxury, in to the solitude of the heights. There he finds an individual to look up to, whom he would like to have as a friend. But the gifts he has to offer are poor and few, so that he feels ashamed. However, it is not the material gifts that count, but sincerity of feeling, and so all goes well in the end."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 23,
@@ -993,7 +1059,10 @@
                     "expl": "Here, in immediate proximity to the strong, light-giving principle at the top, the nature of the dark force undergoes a change. It no longer opposes the strong principle by means of intrigues but submits to its guidance. Indeed, as the head of the other weak lines, it leads all of these to the strong line, just as a princess leads her maids-in-waiting like a shoal of fishes to her husband and thus gains his favor. Inasmuch as the lower element thus voluntarily places itself under the higher, it attains happiness and the higher also receives its due. Therefore all goes well."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 24,
@@ -1035,7 +1104,10 @@
                     "expl": "A man is in a society composed of inferior people, but is connected spiritually with a strong and good friend, and this makes him turn back alone. Although nothing is said of reward and punishment, this return is certainly favorable, for such a resolve to choose the good brings its own reward. \t\t\tSix in the fifth place means:\tNoblehearted return. No remorse.When the time for return has come, a man should not take shelter in trivial excuses, but should look within and examine himself. And if he has done something wrong he should make a noblehearted resolve to confess his fault. No one will regret having taken this road."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 25,
@@ -1081,7 +1153,10 @@
                     "expl": "An unexpected evil may come accidentally from without. If it does not originate in one's own nature or have a foothold there, one should not resort to external means to eradicate it, but should quietly let nature take its course. Then improvement will come of itself."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 26,
@@ -1127,7 +1202,10 @@
                     "expl": "Here the restraining of the impetuous forward drive is achieved in an indirect way. A boar's tusk is in itself dangerous, but if the boar's nature is altered, the tusk is no longer a menace. Thus also where men are concerned, wild force should not be combated directly; instead, its roots should be eradicated."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 27,
@@ -1173,7 +1251,10 @@
                     "expl": "A man may be conscious of a deficiency in himself. He should be undertaking the nourishment of the people, but he has not the strength to do it. Thus he must turn from his accustomed path and beg counsel and help from a man who is spiritually his superior but undistinguished outwardly. If he maintains this attitude of mind perseveringly, success and good fortune are his. But he must remain aware of his dependence. He must not put his own person forward nor attempt great labors, such as crossing the great water."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 28,
@@ -1215,7 +1296,10 @@
                     "expl": "A withered poplar that flowers exhausts its energies thereby and only hastens its end. An older woman may marry once more, but no renewal takes place. Everything remains barren. Thus, though all the amenities are observed, the net result is only the anomaly of the situation.  Applied to politics, the metaphor means that if in times of insecurity we give up alliance with those below us and keep up only the relationships we have with people of higher rank, an unstable situation is created."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 29,
@@ -1261,7 +1345,10 @@
                     "expl": "Danger comes because one is too ambitious. In order to flow out of a ravine, water does not rise higher than the lowest point of the rim. So likewise a man when in danger has only to proceed along the line of least resistance; thus he reaches the goal. Great labors cannot be accomplished in such times; it is enough to get out of the danger."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 30,
@@ -1303,7 +1390,10 @@
                     "expl": "Clarity of mind has the same relation to life that fire has to wood. Fire clings to wood, but also consumes it. Clarity of mind is rooted in life but can also consume it. Everything depends upon how the clarity functions. Here the image used is that of a meteor or a straw fire. A man who is excitable and restless may rise quickly to prominence but produces no lasting effects. Thus matters end badly when a man spends himself too rapidly and consumes himself like a meteor."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 31,
@@ -1349,7 +1439,10 @@
                     "expl": "The back of the neck is the most rigid part of the body. When the influence shows itself there, the will remains firm and the influence does not lead to confusion. Hence remorse does not enter into consideration here. What takes place in the depths of one's being, in the unconscious mind. It is true that if we cannot be influenced ourselves, we cannot influence the outside world."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 32,
@@ -1395,7 +1488,10 @@
                     "expl": "A woman should follow a man her whole life long, but a man should at all times hold to what is his duty at the given moment. Should he persistently seek to conform to the woman, it would be a mistake for him. Accordingly it is altogether right for a woman to hold conservatively to tradition, but a  man must always be flexible and adaptable and allow himself to be guided solely by what his duty requires of him at the moment."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 33,
@@ -1441,7 +1537,10 @@
                     "expl": "It is the business of the superior man to recognize in time that the moment for retreat has come. If the right moment is chosen, the retreat can be carried out within the forms of perfect friendliness, without the necessity of disagreeable discussions. Yet, for all the observance of amenities, absolute firmness of decision is necessary if one is not to be led astray by irrelevant considerations."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 34,
@@ -1487,7 +1586,10 @@
                     "expl": "The goat is noted for hardness outwardly and weakness within. Now the situation is such that everything is easy; there is no more resistance. One can give up a belligerent, stubborn way of acting and will not have to regret it."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 35,
@@ -1529,7 +1631,10 @@
                     "expl": "In times of progress it is easy for strong men in the wrong places to amass great possessions. But such conduct shuns the light. And since times of progress are inevitably brought to the light, perseverance in such action always leads to danger."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 36,
@@ -1575,7 +1680,10 @@
                     "expl": "Prince Chi lived at the court of the evil tyrant Chou Hsin, who, although not mentioned by name, furnished the historical example on which this whole situation is based. Prince Chi was a relative of the tyrant and could not withdraw from the court; therefore he concealed his true sentiments and feigned insanity. Although he was held a slave, he did not allow external misery to deflect him from his convictions.  This provides a teaching for those who cannot leave their posts in times of darkness. In order to escape danger, they need invincible perseverance of spirit and redoubled caution in their dealings with the world."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 37,
@@ -1621,7 +1729,10 @@
                     "expl": "A king is the symbol of a fatherly man who is richly endowed in mind. He does nothing to make himself feared; on the contrary, the whole family can trust him, because love governs their intercourse. His character of itself exercises the right influence."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 38,
@@ -1667,7 +1778,10 @@
                     "expl": "Coming upon a sincere man, one fails to recognize him at first because of the general estrangement. However, he bites his way through the wrappings that are causing the separation. When such a companion thus reveals himself in his true character, it is one's duty to go to meet him and to work with him."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 39,
@@ -1713,7 +1827,10 @@
                     "expl": "Here we see a man who is called to help in an emergency. He should not seek to evade the obstructions, no matter how dangerously they pile up before him. But because he is really called to the task, the power of his spirit is strong enough to attract helpers whom he can effectively organize, so that through the well-directed co-operation of all participants the obstruction is overcome."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 40,
@@ -1759,7 +1876,10 @@
                     "expl": "Times of deliverance demand inner resolve. Inferior people cannot be driven off by prohibitions or any external means. If one desires to be rid of them, he must first break completely with them in his own mind; they will see for themselves that he is in earnest and will withdraw."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 41,
@@ -1805,7 +1925,10 @@
                     "expl": "\tIf someone is marked out by fate for good fortune, it comes without fail. All oracles-as for instance those that are read from the shells of tortoises-are bound to concur in giving him favorable signs. He need fear nothing, because his luck is ordained from on high."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 42,
@@ -1851,7 +1974,10 @@
                     "expl": "True kindness does not count upon nor ask about merit and gratitude but acts from inner necessity. And such a truly kind heart finds itself rewarded in being recognized, and thus the beneficent influence will spread unhindered."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 43,
@@ -1897,7 +2023,10 @@
                     "expl": "Weeds always grow back again and are difficult to exterminate. So too the struggle against an inferior man in a high position demands firm resolution. One has certain relations with him, hence there is danger that one may give up the struggle as hopeless. But this must not be. One must go on resolutely and not allow himself to be deflected from him course. Only in this way does one remain free of blame."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 44,
@@ -1943,7 +2072,10 @@
                     "expl": "The melon, like the fish, is a symbol of the principle of darkness. It is sweet but spoils easily and for this reason is protected with a cover of willow leaves. This is a situation in which a strong, superior, well-poised man tolerates and protects the inferiors in his charge.  He has the firm lines of order an beauty within himself but he does not lay stress upon them. He does not bother his subordinates with outward show or tiresome admonitions but leaves them quite free, putting his trust in the transforming power of a strong and upright personality. And behold! Fate is favorable. His inferiors respond to his influence and fall to his disposition like ripe fruit."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 45,
@@ -1989,7 +2121,10 @@
                     "expl": "When people spontaneously gather around a man, it is only a good. It gives him a certain influence that can be altogether useful.. But of course there is also the possibility that many may gather around him not because of a feeling of confidence but merely because of his influential position. This is certainly to be regretted. The only means of dealing with such people is to gain their confidence through steadfastness an intensified, unswerving devotion to duty. In this way secret mistrust will gradually be overcome, and there will be no occasion for regret."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 46,
@@ -2035,7 +2170,10 @@
                     "expl": "When a man is advancing farther and farther, it is important for him not to become intoxicated by success. Precisely when he experiences great success it is necessary to remain sober and not to try to skip any stages; he must go on slowly, step by step, as though hesitant. Only such calm, steady progress, overleaping nothing, leads to the goal."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 47,
@@ -2081,7 +2219,10 @@
                     "expl": "An individual who has the good of mankind at heart is oppressed from above and below (this is the meaning of the cutting off of nose an defeat). He finds no help among the people whose duty it would be to aid in the work of rescue (ministers wore purple knee bands). But little by little, things take a turn for the better. Until that time, he should turn to God, firm in his inner composure, and pray and offer sacrifice for the general well-being."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 48,
@@ -2127,7 +2268,10 @@
                     "expl": "A well that is fed by a spring of living water is a good well. A man who has virtues like a well of this sort is born to be a leader and savior of men, for he has the water of life. Nevertheless, the character for \"good fortune\" is left out here. The all-important thing about a well is that its water be drawn. The best water is only a potentiality for refreshment as long as it is not brought up. So too with leaders of mankind: it is all-important that one should drink from the spring of their words and translate them into life."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 49,
@@ -2173,7 +2317,10 @@
                     "expl": "A tigerskin, with its highly visible black stripes on a yellow ground, shows its distinct pattern from afar. It is the same with a revolution brought about by a great man: large, clear guiding lines become visible, understandable to everyone. Therefore he need not first consult the oracle, for he wins the spontaneous support of the people."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 50,
@@ -2219,7 +2366,10 @@
                     "expl": "Here we have, in a ruling position, a man who is approachable and modest in nature. As a result of this attitude he succeeds in finding strong and able helpers who complement and aid him in his work. Having achieved this attitude, which requires constant self-abnegation, it is important for him to hold to it and not to let himself be led astray."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 51,
@@ -2265,7 +2415,10 @@
                     "expl": "This is a case not of a single shock but of repeated shocks with no breathing space between. Nonetheless, the shock causes no loss, because one takes care to stay in the center of movement and in this way to be spared the fate of being helplessly tossed hither and thither."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 52,
@@ -2307,7 +2460,10 @@
                     "expl": "A man in a dangerous situation, especially when he is not adequate to it, is inclined to be very free with talk and presumptuous jokes. But injudicious speech easily leads to situations that subsequently give much cause for regret. However, if a man is reserved in speech, his words take ever more definite form, and every occasion for regret vanishes."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 53,
@@ -2353,7 +2509,10 @@
                     "expl": "The summit is a high place. In a high position one easily becomes isolated. One is misjudged by the very person on whom one is dependent-the woman by her husband, the official by his superior. This is the work of deceitful persons who have wormed their way in. The result is that relationships remain sterile, and nothing is accomplished. But in the course of further development, such misunderstandings are cleared away, and reconciliation is achieved after all."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 54,
@@ -2399,7 +2558,10 @@
                     "expl": "The sovereign I is T'ang the Completer. This ruler decreed that the imperial princesses should be subordinated to their husbands in the same manner as other women (cf. Hexagram 11, six in the fifth place). The emperor does not wait for a suitor to woo his daughter but gives her in marriage when he sees fit. Therefore it is in accord with custom for the girl's family to take the initiative here.  We see here a girl of aristocratic birth who marries a man of modest circumstances and understands how to adapt herself with grace to the new situation. She is free of all vanity of outer adornment, and forgetting her rank in her marriage, takes a place below that of her husband, just as the moon, before it is quite full, does not directly face the sun."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 55,
@@ -2445,7 +2607,10 @@
                     "expl": "The ruler is modest and therefore open to the counsel of able men. Thus he is surrounded by men who suggest to him the lines of action. This brings blessing, fame, and good fortune to him and all the people."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 56,
@@ -2491,7 +2656,10 @@
                     "expl": "Traveling statesman were in the habit of introducing themselves to local princes with the gift of a pheasant, killing it at the first shot. Thus he finds friends who praise and recommend him, and in the end the prince accepts him and confers an office upon him.  Circumstances often cause a man to seek a home in foreign parts. If he knows how to meet the situation and how to introduce himself in the right way, he may find a circle of friends and a sphere of activity even in a strange country."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 57,
@@ -2537,7 +2705,10 @@
                     "expl": "In the situation described in Ku, WORK ON WHAT HAS BEEN SPOILED (18), an entirely new point of departure must be set up, whereas here it is only a question of reforms. The beginning has not been good, but the moment has been reached when a new direction can be taken. Change and improvement are called for. Such steps must be undertaken with steadfastness, that is, with a firm and correct attitude of mind; then they will succeed, and remorse will disappear. But it must be remembered that such improvements require careful consideration. Before a change is made, it must be pondered over again and again. After the change is made, it is necessary to note carefully for some time after how the improvements bear the test of actuality. Such careful work is accompanied by good fortune."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 58,
@@ -2583,7 +2754,10 @@
                     "expl": "Dangerous elements approach even the far best of men. If a man permits himself to have anything to do with them, their disintegrating influence acts slowly but surely, and inevitable brings dangers in its train. But if he recognizes the situation and can comprehend the danger, he knows how to protect himself and remains unharmed."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 59,
@@ -2625,7 +2799,10 @@
                     "expl": "When we are working at a task that affects the general welfare, we must leave all private friendships out of account. Only by rising above party interests can we achieve something decisive. He who has the courage thus to forego what is near wins what is afar. But in order to comprehend this standpoint, one must have a wide view of the interrelationships of life, such as only unusual men attain."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 60,
@@ -2671,7 +2848,10 @@
                     "expl": "\tThe limitation must be carried out in the right way if it is to be effective. If we seek to impose restrictions on others only, while evading them ourselves, these restrictions will always be resented and will provoke resistance. If, however, a man in a leading position applies the limitation first to himself, demanding little from those associated with him, and with modest means manages to achieve something, good fortune is the result. Where such an example occurs, it meets with emulation, so that whatever is undertaken must succeed."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 61,
@@ -2717,7 +2897,10 @@
                     "expl": "This describes the ruler who holds all elements together by the power of his personality. Only when the strength of his character is so ample that he can influence all who are subject to him, is he as he needs to be. The power of suggestion must emanate from the ruler. It will firmly knit together and unite all his adherents. Without this central force, all external unity is only deception and breaks down at the decisive moment."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 62,
@@ -2763,7 +2946,10 @@
                     "expl": "As a high place is pictured here, the image of a flying bird has become that of flying clouds. But dense as the clouds are, they race across the sky and give no rain. Similarly, in exceptional times there may be a born ruler who is qualified to set the world in order, but who cannot achieve anything or confer blessing on the people because he stands alone and has no helpers. Is such times a man must seek out helpers with whose aid he can carry out the task. But these helpers must be modestly sought out in the retirement to which they have withdrawn. It is not in the fame nor their great names but their genuine achievements that are important. Through such modesty the right man is found, and the exceptional task is carried out in spite of all difficulties."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 63,
@@ -2809,7 +2995,10 @@
                     "expl": "Religious attitudes are likewise influenced by the spiritual atmosphere prevailing in times after completion. In divine worship the simple old forms are replaced by an ever more elaborate ritual and an ever greater outward display. But inner seriousness is lacking in this show of magnificence; human caprice takes the place of conscientious obedience to the divine will. However, while man sees what is before his eyes, God looks into the heart. Therefore a simple sacrifice offered with real piety holds a greater blessing than an impressive service without warmth."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     },
     {
         "number": 64,
@@ -2855,6 +3044,9 @@
                     "expl": "The victory has been won. The power of steadfastness has not been routed. Everything has gone well. All misgivings have been overcome. Success has justified the deed. The light of a superior personality shines forth anew and makes its influence felt among men who have faith in it and rally around it. The new time has arrived, and with it good fortune. And just as the sun shines forth in redoubled beauty after rain, or as a forest grows more freshly green from charred ruins after a fire, so the new era appears all the more glorious by contrast with the misery of the old."
                 }
             ]
-        }
+        },
+        "tags": [
+            {"id": 1, "label":""}
+        ]
     }
 ]

@@ -1,6 +1,7 @@
 import React from 'react'
-import Dialog from 'material-ui/Dialog';
-import Button from 'material-ui/Button';
+//import Dialog from 'material-ui/Dialog';
+import { Modal, Button } from 'semantic-ui-react'
+//import Button from 'material-ui/Button';
 
 class ImageCard extends React.Component {
 
@@ -15,6 +16,8 @@ class ImageCard extends React.Component {
       handleClose = () => {
         this.setState({open: false});
       }
+
+      close = () => this.setState({ open: false });
     
       render() {
         const actions = [
@@ -25,10 +28,13 @@ class ImageCard extends React.Component {
           />
         ]
         return (
-          <div className="image-card" style={{backgroundImage: `url(${this.props.url})`}} onClick={this.handleOpen}>
-            <Dialog
+          <div className="image-card" style={{backgroundImage: `url(${this.props.url})`}} onClick={this.handleOpen}  closeIcon>
+            <Modal
+              //trigger={<Button>Show Modal</Button>}
               title={this.props.pic.title}
-              actions={actions}
+              //actions={actions}
+              size={'small'}
+              onClose={this.close}
               modal={false}
               open={this.state.open}
               onRequestClose={this.handleClose}
@@ -36,7 +42,7 @@ class ImageCard extends React.Component {
               bodyClassName="dialog-body"
             >
               <img className="image" src={this.props.url} alt={this.props.pic.title} />
-            </Dialog>
+            </Modal>
             <div className="overlay"><div id="overlay-text">View Image</div></div>
           </div>
         )
