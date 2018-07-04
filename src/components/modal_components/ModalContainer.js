@@ -2,7 +2,6 @@ import React from 'react'
 import { Modal, Label } from 'semantic-ui-react'
 //import { getTrigramByName } from '../../constants/lookup.js';
 import { HexagramImage } from '../HexagramImage.js';
-//import HeadContainer from './HeadContainer.js';
 import * as pictureActions from '../../actions/pictures'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -10,7 +9,7 @@ import ImageContainer from './ImageContainer.js';
 import ReactDOM from 'react-dom'
 import classnames from 'classnames';
 import {NavLink, withRouter} from 'react-router-dom';
-import queryString from 'query-string';
+
 
 class ModalContainer extends React.Component {
 
@@ -28,6 +27,7 @@ class ModalContainer extends React.Component {
     let pics = this.props.hexagram.tags[0].label 
     this.props.getImages(pics)
   }
+
 
   show = size => () => this.setState({ size, open: true })
   show = dimmer => () => this.setState({ dimmer, open: true })

@@ -17,6 +17,9 @@ a.ui.large.basic.label.slabel {
 a.ui.large.basic.label.slabel--active {
   color: gold; }
 
+.oversect {
+  margin-top: 30%; }
+
 /* image body area */
 .image-wrapper {
   height: auto;

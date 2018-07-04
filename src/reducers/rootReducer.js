@@ -17,45 +17,7 @@ export default function rootReducer(state = {
         filtered = action.payload.filter(image => image.nsfw !== true)
       }
       return {...state, images: action.payload, filtered}
-    case "FILTER_IMAGES":
-      const mature = !state.mature
-      if (mature) {
-        filtered = Object.assign([], state.images)
-      } else {
-        filtered = filtered.filter(image => image.nsfw !== true)
-      }
-      return {...state, mature, filtered}
-    case "MOST_VIEWS":
-      filtered.sort(_compareValues('views', 'desc'))
-      return {...state, currentSort: action.type, filtered}
-    case "MOST_UPVOTES":
-      filtered.sort(_compareValues('ups', 'desc'))
-      return {...state, currentSort: action.type, filtered}
-    case "MOST_FAV":
-      filtered.sort(_compareValues('favorite_count', 'desc'))
-      return {...state, currentSort: action.type, filtered}
-    case "LATEST":
-      filtered.sort(_compareValues('datetime', 'desc'))
-      return {...state, currentSort: action.type, filtered}
-    case "ADD_COMMENT":
-      filtered.map(image => {
-        if (image.id === action.picId) {
-          if (image.comments) {
-            let length = image.comments.length
-            image.comments.push({[length]:action.payload})
-          } else {
-            image.comments = []
-            image.comments.push({"0":action.payload})
-          }
-          return image
-        }
-        return image
-      })
-      return {...state, filtered}
-    case "DELETE_COMMENT":
-      let currentImage = filtered.find(image => image.id === action.picId)
-      currentImage.comments.splice(action.idx, 1)
-      return {...state, filtered}
+    
     default:
       return state
   }
